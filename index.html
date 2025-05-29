@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <!--==================== FAVICONS =====================-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+         <!--==================== REMIXICONS =====================-->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+
+         <!--==================== CSS =====================-->
+         <link rel="stylesheet" href="assets/css/styles.css">
+         <style>
+            .typing-circle {
+                position: absolute;
+                width: 0;
+                height: 0;
+                background-color: blue;
+                border-radius: 50%;
+                transition: width 0.5s, height 0.5s;
+            }
+    
+            /* Toggle switch styles */
+            .toggle-container {
+                position: relative;
+                display: inline-block;
+                width: 60px;
+                height: 34px;
+            }
+    
+            .toggle-input {
+                display: none;
+            }
+    
+            .toggle-slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc;
+                transition: .4s;
+                border-radius: 34px;
+            }
+    
+            .toggle-slider:before {
+                position: absolute;
+                content: "";
+                height: 26px;
+                width: 26px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white;
+                transition: .4s;
+                border-radius: 50%;
+            }
+    
+            input:checked + .toggle-slider {
+                background-color: #2196F3;
+            }
+    
+            input:checked + .toggle-slider:before {
+                transform: translateX(26px);
+            }
+        </style>
+         <title>Raghad Designer</title>
+    </head> 
+    <body>
+        <!--==================== HEADER =====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <span class="nav__logo-circle">R</span>
+                    <span class="nav__logo-name">Designer</span>
+                </a>
+
+
+                <div class="nav__menu" id="nav-menu">
+                    <span class="nav__title">Menu</span>
+
+                    <h3 class="nav__name">Raghad</h3>
+
+                    <ul class="nav__list">
+                        <li 
+                        +class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+
+                        <li 
+                        class="nav__item">
+                            <a href="#about" class="nav__link">About Me</a>
+                        </li>
+
+                        <li 
+                        class="nav__item">
+                            <a href="#skills" class="nav__link">Skills</a>
+                        </li>
+
+                        <li 
+                        class="nav__item">
+                            <a href="#projects" class="nav__link">Projects</a>
+                        </li>
+
+                        <li 
+                        class="nav__item">
+                            <a href="#contact" class="nav__link nav__link-button">Contact Me</a>
+                        </li>
+                    </ul>
+
+                    <!-- Close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__buttons">
+                         <!-- Theme button -->
+                         <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                     <!-- Toggle button -->
+                     <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-4-line"></i>
+                     </div>
+                </div>
+            </nav>
+            <title>Typing Effect</title>
+            <style>
+              #text {
+                white-space: pre;
+                overflow: hidden;
+            
+                border-left: 4px solid hsla(0, 0%, 100%, 0);
+                animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+              }
+              
+              @keyframes blink-caret {
+    50% { border-color: transparent; } /* Make the caret invisible at 50% */
+}
+
+/* Apply blinking caret animation to text */
+#text {
+    border-right: 1px solid #ffffff00; /* Solid line simulating the caret */
+    animation: blink-caret 0.7s step-end infinite; /* Apply the animation infinitely */
+}
+    
+              
+            </style>
+        </header>
+
+          <!--==================== MAIN =====================-->
+          <main class="main">
+            <!--==================== HOME =================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    
+                    <h1 class="home__name">
+                        Hi I'am <span style="color: #D88CEF;   ">Raghad</span>
+                    </h1>
+
+                    <div class="home__perfil">  
+                        <div class="home__image">
+                            <img src="assets/img/home-perfill .jpeg" alt="image" class="home__img">
+                            <div class="home__shadow"></div>
+ 
+                            <img src="assets/img/curved-arrow.svg" alt="" class="home__arrow">
+                            <img src="assets/img/random-lines.svg" alt="" class="home__line">
+
+                            <div class="geometric-box"></div>
+                        </div>
+
+                        <div class="home__social">
+                            <a 
+                            href="https://www.instagram.com/raghad_ddesigner?igsh=dHl2Y3hlYWE1cW5v"  target="_blank" class="home__social-link">
+                            <i class="ri-instagram-line"></i>
+                            </a>
+
+                            <a 
+                            href="https://www.facebook.com/share/16nMxF3QW4/?mibextid=qi2Omg"  target="_blank" class="home__social-link">
+                            <i class="ri-facebook-line"></i>
+                            </a>
+
+                            <a 
+                            href="https://wa.me/message/TZZD4A2W5X66I1"  target="_blank" class="home__social-link">
+                            <i class="ri-whatsapp-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__info">
+                        <p class="home__description"  id="text">
+                            <b>  <div>
+                    <p id="text"></p>
+                    <div style="text-align: center; ">
+                        <a 
+                        class="download-button">My Workspace
+                    </a>
+                    </div>
+                  </div></b> 
+                        </p>
+
+                       <!-- Scroll Down Button -->
+                    <a href="#about" class="home__scroll">
+                        <div class="home__scroll-box">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                        <!-- Change the text and add a line break -->
+                        <span class="home__scroll-text"><span style="color: #D88CEF;   ">welcome to my portfolio</span> <br> Scroll Down</span>
+                    </a>
+
+                    </div>
+                </div>
+              
+                <script>
+                    var texts = [
+    "I 'am a creator of visual experiences",
+    "I 'am a designer who transforms concepts into reality",
+    "I 'am passionate about shaping beautiful digital worlds"
+];
+
+                    var count = 0;
+                    var index = 6; // Start index after "I'm"
+                    var currentText = "  I'am ";
+                    var letter = "  I'am ";
+            
+                    function type() {
+                        if (count === texts.length) {
+                            count = 0; // Reset the count to start over
+                        }
+                        currentText = texts[count];
+                        letter = currentText.slice(0, ++index);
+            
+                        document.getElementById('text').textContent = letter;
+                        document.getElementById('text').textContent += '|';
+            
+                        if (letter.length === currentText.length) {
+                            setTimeout(deleteText, 500); // Wait for 1.5 seconds before deleting
+                        } else {
+                            setTimeout(type, 60); // Continue typing if the text is not fully displayed
+                        }
+                    }
+            
+                    function deleteText() {
+                        letter = currentText.slice(0, --index);
+            
+                        document.getElementById('text').textContent = letter;
+                        document.getElementById('text').textContent += '|';
+            
+                        if (index === 7) { // Reset to start after "I'm "
+                            setTimeout(function () {
+                                count++; // Increment the count after deleting
+                                index = 6; // Reset the index for the next text
+                                type(); // Call the type function recursively for the next text
+                            }, 500); // Wait for 0.5 seconds before typing the next sentence
+                        } else {
+                            setTimeout(deleteText, 60); // Continue deleting if the text is not fully cleared
+                        }
+                    }
+            
+                    type();
+                </script>
+                
+            </section>
+
+            <!--==================== ABOUT =================-->
+            <section class="about section" id="about">
+                 <div class="about__container container grid">
+                    <h2 class="section__title-1">
+                        
+                        <span> Overview  .</span>
+                    </h2>
+
+                    <div class="about__perfil">
+                        <div class="about__image">
+                            <img src="assets/img/about-perfill.jpeg" alt="image" class="about__img">
+
+                            <div class="about__shadow"></div>
+
+                            <div class="geometric-box"></div>
+                            <img src="assets/img/random-lines.svg" alt="" class="about__line">
+                            <div class="about__box"></div>
+                        </div>
+                    </div>
+
+                    <div class="about__info">
+                      <p class="about__description">
+    <b>Raghad Al Joujou</b>, from the countryside of Damascus, a professional designer with a strong artistic sense and extensive experience in UI/UX design. I specialize in transforming ideas into innovative and visually appealing designs using advanced design tools and techniques. My passion for detail and precision ensures high-quality visuals that reflect brand identity and exceed client expectations.
+</p>
+
+
+                        <ul class="about__list">
+                            <li class="about__item">
+                                <b><i class="ri-arrow-right-s-line" style="color: #D88CEF;"></i> Birthday: </b> 25 May 2004
+                            </li> 
+                              <li class="about__item">
+                                <b><i class="ri-arrow-right-s-line" style="color: #D88CEF;"></i>  Phone: </b>+963 948 827 852
+                            </li>
+                        </ul> 
+                        
+                        <ul class="about__list">
+                            <li class="about__item">
+                                <b><i class="ri-arrow-right-s-line" style="color: #D88CEF;"></i>  City:</b> Damascus, Syria
+                            </li> 
+                              <li class="about__item">
+                                <b><i class="ri-arrow-right-s-line" style="color: #D88CEF;"></i>  Freelance: </b> Available
+                            </li>
+                        </ul> 
+
+                        <div class="about__buttons">
+                            <a href="#contact" class="button">
+                                <i class="ri-send-plane-line"> Contact Me</i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/abdullah-al-joujou-a24962185/" target="_blank" class="button__ghost">
+                                <i class="ri-linkedin-box-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+     <!--==================== SERVICES =================-->
+<section class="services section" id="services">
+    <h2 class="section__title-2">
+        <span>Services.</span>
+    </h2>
+
+    <div class="services__container container grid">
+
+        <!-- UI/UX Design -->
+        <article class="services__card">
+            <div class="services__border"></div>
+
+            <div class="services__content">
+                <div class="services__icon">
+                    <div class="services__box"></div>
+                    <i class="ri-layout-4-line"></i>
+                </div>
+
+                <h2 class="services__title">UI/UX Design</h2>
+
+                <p class="services__description">
+                    Crafting intuitive and user-friendly interfaces that enhance user experience and align with your brand identity.
+                </p>
+            </div>
+        </article>
+
+      <!-- Visual Design & Branding -->
+<article class="services__card">
+    <div class="services__border"></div>
+
+    <div class="services__content">
+        <div class="services__icon">
+            <div class="services__box"></div>
+            <i class="ri-brush-line"></i>
+        </div>
+
+        <h2 class="services__title">Visual Design & Branding</h2>
+
+        <p class="services__description">
+            Designing logos, social media visuals, product packaging, posters, flyers, business cards, and advertisements — tailored to make your brand visually powerful and cohesive across all platforms.
+        </p>
+    </div>
+</article>
+
+
+        <!-- Brand Identity -->
+        <article class="services__card">
+            <div class="services__border"></div>
+
+            <div class="services__content">
+                <div class="services__icon">
+                    <div class="services__box"></div>
+                    <i class="ri-palette-line"></i>
+                </div>
+
+                <h2 class="services__title">Brand Identity</h2>
+
+                <p class="services__description">
+                    Creating cohesive visual identities including logos, color palettes, and typography to represent your brand with impact and clarity.
+                </p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+             <!--==================== Skills =================-->
+             <section class="services section" id="skills">
+                <h2 class="section__title-2">
+                    <span>Skills.</span>
+                </h2>
+               
+                
+                <div class="table-container">
+                    <table class="skills-table">
+                        <table class="skills-table">
+                            <tr>
+                             
+                              <td class="skill-item">
+                                    <img src="assets/img/skills/css.png" alt=".CSS{ }">
+                                    <h2>Adobe Premiere</h2>
+                                </td>
+                                <td class="skill-item">
+                                    <img src="assets/img/skills/c.png"  alt="C">
+                                    <h2 style="text-align: center;">Adobe After Effect</h2>
+                                </td>
+                                <td class="skill-item">
+                                    <img src="assets/img/skills/c++.png" alt="C++">
+                                    <h2>Canva<h2>
+                                </td>
+                              
+                                <td class="skill-item">
+                                    <img src="assets/img/skills/git.png" alt="Dart">
+                                    <h2>Adobe Illustrator</h2>
+                                </td>
+                            
+                                <td class="skill-item">
+                                    <img src="assets/img/skills/figma.png" alt="Dart">
+                                    <h2>Figma</h2>
+                                </td>
+                                <td class="skill-item">
+                                    <img src="assets/img/skills/xd.png" alt="Flutter">
+                                    <h2> Adobe XD</h2>
+                                </td>
+                                <td class="skill-item">
+                                    <img src="assets/img/skills/ps.png" alt="Firebase">
+                                    <h2>Adobe Photoshop</h2>
+                                </td>
+                            </tr>
+                              
+                        </table>                    </table>
+                </div>
+                
+                
+              
+                
+                  
+                </div>
+            </section>
+            
+
+            <section class="services section" id="other">
+                <div>
+                    <h2 style="text-align: center;font-size: 46px;padding-bottom: 10px;">
+                        <span>Other.</span>
+                    </h2>
+            
+                    <div class="skill-container">
+                        <div class="skill">Visual Identity Design</div>
+                        <div class="skill">UI/UX Design</div>
+                        <div class="skill">Social Media Design</div>
+                        <div class="skill">Print & Packaging Design</div>
+                        <div class="skill">Typography Mastery</div>
+                        <div class="skill">Color Theory & Composition</div>
+                        <div class="skill">Creative Problem Solving</div>
+                        <div class="skill">Design Tools Proficiency</div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== PROJECTS =================-->
+<section class="projects section" id="projects">
+    <h2 class="section__title-1">
+        <span>Designs / Projects</span>
+    </h2>
+
+    <div class="projects__container container grid">
+        <!-- عرض الصور من image1 إلى image38 -->
+        <!-- مشروع 1: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image1.jpg" alt="Design 1" class="projects__img">
+        </div>
+        
+        <!-- مشروع 2: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image2.jpg" alt="Design 2" class="projects__img">
+        </div>
+
+        <!-- مشروع 3: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image3.jpg" alt="Design 3" class="projects__img">
+        </div>
+
+      
+
+        <!-- مشروع 5: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image5.jpg" alt="Design 5" class="projects__img">
+        </div>
+
+        <!-- مشروع 6: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image6.jpg" alt="Design 6" class="projects__img">
+        </div>
+
+        <!-- مشروع 7: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image7.jpg" alt="Design 7" class="projects__img">
+        </div>
+
+        <!-- مشروع 8: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image8.jpg" alt="Design 8" class="projects__img">
+        </div>
+
+        <!-- مشروع 9: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image9.jpg" alt="Design 9" class="projects__img">
+        </div>
+
+        <!-- مشروع 10: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image10.jpg" alt="Design 10" class="projects__img">
+        </div>
+
+        <!-- مشروع 11: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image11.jpg" alt="Design 11" class="projects__img">
+        </div>
+
+     
+
+        <!-- مشروع 13: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image13.jpg" alt="Design 13" class="projects__img">
+        </div>
+
+        <!-- مشروع 14: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image14.jpg" alt="Design 14" class="projects__img">
+        </div>
+
+        <!-- مشروع 15: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image15.jpg" alt="Design 15" class="projects__img">
+        </div>
+
+        <!-- مشروع 16: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image16.jpg" alt="Design 16" class="projects__img">
+        </div>
+
+        <!-- مشروع 17: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image17.jpg" alt="Design 17" class="projects__img">
+        </div>
+
+        <!-- مشروع 18: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image18.jpg" alt="Design 18" class="projects__img">
+        </div>
+
+        <!-- مشروع 19: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image19.jpg" alt="Design 19" class="projects__img">
+        </div>
+
+        <!-- مشروع 20: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image20.jpg" alt="Design 20" class="projects__img">
+        </div>
+
+        <!-- مشروع 21: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image21.jpg" alt="Design 21" class="projects__img">
+        </div>
+
+        <!-- مشروع 22: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image22.jpg" alt="Design 22" class="projects__img">
+        </div>
+
+        <!-- مشروع 23: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image23.jpg" alt="Design 23" class="projects__img">
+        </div>
+
+        <!-- مشروع 24: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image24.jpg" alt="Design 24" class="projects__img">
+        </div>
+
+        <!-- مشروع 26: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image26.jpg" alt="Design 26" class="projects__img">
+        </div>
+
+        <!-- مشروع 27: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image27.jpg" alt="Design 27" class="projects__img">
+        </div>
+
+        <!-- مشروع 29: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image29.jpg" alt="Design 29" class="projects__img">
+        </div>
+
+        <!-- مشروع 30: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image30.jpg" alt="Design 30" class="projects__img">
+        </div>
+
+        <!-- مشروع 31: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image31.jpg" alt="Design 31" class="projects__img">
+        </div>
+
+        <!-- مشروع 33: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image33.jpg" alt="Design 33" class="projects__img">
+        </div>
+
+        <!-- مشروع 34: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image34.jpg" alt="Design 34" class="projects__img">
+        </div>
+
+        <!-- مشروع 35: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image35.jpg" alt="Design 35" class="projects__img">
+        </div>
+
+        <!-- مشروع 36: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image36.jpg" alt="Design 36" class="projects__img">
+        </div>
+
+        <!-- مشروع 37: صورة -->
+        <div class="projects__card">
+            <img src="assets/img/designs/image37.jpg" alt="Design 37" class="projects__img">
+        </div>
+    </div>
+</section>
+
+
+             <!--==================== PROJECTS =================-->
+            <section class="projects section" id="projects">
+    <h2 class="section__title-1">
+        <span>UI UX /Projects.</span>
+    </h2>
+
+    <div class="projects__container container grid">
+        
+        <article class="projects__card">
+            <div class="projects__image" style="position: relative;">
+                <img src="assets/img/kyc.png" alt="National Islamic Bank Account Opening" class="projects__img">
+                <a href="https://account.nib.com.sy" class="projects__button button" style="position: absolute; top: 155px; right: 10px; transform: scale(1.3);">
+                    <i class="ri-globe-line"></i>
+                </a>
+            </div>
+        
+            <div class="projects__content">
+                <h3 class="projects__subtitle">National Islamic Bank</h3>
+                <h2 class="projects__title">Online Account Opening Platform</h2>
+              <p class="projects__description">
+    As the designer of this platform for the National Islamic Bank, I focused on creating a clean, user-friendly interface that simplifies the process of opening both traditional and digital accounts. The design emphasizes clarity, intuitive navigation, and a modern visual identity that builds trust and enhances the user experience. Every element—from icons to color scheme—was crafted to ensure both aesthetic appeal and functional efficiency.
+</p>
+
+    
+            </div>
+        
+            <div class="projects__buttons">
+                <a href="https://account.nib.com.sy" target="_blank" class="projects__link">
+                    <i class="ri-globe-line"></i>Visit
+                </a>
+                <a href="https://nib.com.sy" target="_blank" class="projects__link">
+                    <i class="ri-bank-line"></i>Bank Website
+                </a>
+            </div>
+            <p style="padding-top: 10px; font-size: 14px;">
+    <span style="color: #D88CEF;">#UI_Design </span>
+    <span style="color: hsla(0, 0%, 49%, 0.687);"> #UX_Research #Banking_Interface #DigitalDesign </span>
+</p>
+
+<p style="color: hsla(0, 0%, 49%, 0.687); font-size: 12px; padding-top: 10px;">
+    Tools & Techniques Used: Figma, Adobe XD, Color Theory, Typography, Design Systems, Wireframing, Prototyping, User Flow Mapping
+</p>
+
+        </article>
+        
+        
+        
+        <article class="projects__card">
+            <div class="projects__image" style="position: relative;">
+                <img src="assets/img/wasena.jpg" alt="image" class="projects__img">
+                <a href="https://play.google.com/store/apps/details?id=com.wasena.app" class="projects__button button" style="position: absolute; top: 155px; right: 10px; transform: scale(1.3);">
+                    <i class="ri-google-play-line"></i>
+                </a>
+                <a href="https://apps.apple.com/us/app/wasena/id6504331081" class="projects__button button" style="position: absolute; top: 155px; right: 60px; transform: scale(1.3);">
+                    <i class="ri-apple-fill"></i>
+                </a>
+            </div>
+        
+            <div class="projects__content">
+                <h3 class="projects__subtitle">Delivery app</h3>
+                <h2 class="projects__title">Wasena - وصينا</h2>
+               <p class="projects__description">
+    As the designer of Wasena, a delivery service platform for the Damascus countryside, I focused on creating a user-friendly interface that makes ordering and tracking packages effortless. I developed a clean, modern visual identity with custom icons, intuitive navigation, and consistent branding. The design ensures a smooth experience for both individuals and businesses, making the process of delivery feel fast, reliable, and accessible. 🚚📦
+</p>
+
+            
+            </div>
+        
+            <div class="projects__buttons">
+              
+                <a href="https://www.instagram.com/wasena.hon?igsh=OXl3NXk1cmtrMHlu" target="_blank" class="projects__link">
+                    <i class="ri-instagram-line"></i>Visit
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.wasena.app" target="_blank" class="projects__link">
+                    <i class="ri-google-play-line"></i>Google Play
+                </a>
+                <a href="https://apps.apple.com/us/app/wasena/id6504331081" target="_blank" class="projects__link">
+                    <i class="ri-apple-fill"></i>App Store
+                </a>
+            </div>
+           <p style="padding-top: 10px; font-size: 14px;">
+    <span style="color: #D88CEF;">#UI_Design</span>
+    <span style="color: hsla(0, 0%, 49%, 0.687);"> #UX_Design #MobileDesign #Branding</span>
+</p>
+<p>
+    <span style="color: #D88CEF; margin-left: 10px;">#Tools</span>
+    <span style="color: hsla(0, 0%, 49%, 0.687);"> Figma, Adobe XD, Illustrator, Prototyping</span>
+</p>
+
+       
+        </article>
+        
+
+                    <article class="projects__card">
+                        <div class="projects__image" style="position: relative;">
+                            <img src="assets/img/quizon.jpg" alt="image" class="projects__img">
+
+                            <a href="https://play.google.com/store/apps/details?id=com.flutter.quizon" class="projects__button button" style="position:  absolute; top: 155px;right: 10px;transform: scale(1.3);">
+                                <i class="ri-google-play-line"></i>
+                            </a>
+                        </div> 
+
+                        <div class="projects__content">
+                            <h3 class="projects__subtitle">project at (PionneNetwork Company)</h3>
+                            <h2 class="projects__title">QuizOn App</h2>
+
+                           <p class="projects__description">
+    As the designer behind Quizon, I created a modern and engaging interface that encourages users to test and improve their knowledge while enjoying a seamless experience. The clean layout, intuitive navigation, and thoughtful visual elements were crafted to keep users motivated and focused throughout the quiz. 💡🧐
+</p>
+
+                        </div>
+
+                        <div class="projects__buttons">
+                           
+                            <a href="https://sa.pioneers.network" target="_blank" class="projects__link">
+                                <i class="ri-code-box-line"></i>Visit
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.flutter.quizon" target="_blank" class="projects__link">
+                                <i class="ri-google-play-line"></i>Google Play
+                            </a>
+                        </div>
+                       <p style="padding-top: 10px; font-size: 14px;">
+    <span style="color: #D88CEF;">#UI_Design #UX_Design</span>
+    <span style="color: hsla(0, 0%, 49%, 0.687);"> #MobileDesign #Prototyping #UserInterface</span>
+</p>
+
+                    
+                    </article>
+
+                    <article class="projects__card">
+                        <div class="projects__image" style="position: relative;">
+                            <img src="assets/img/clinic.jpg" alt="image" class="projects__img">
+
+                            <a href="#" class="projects__button button" style="position:  absolute; top: 155px;right: 10px;transform: scale(1.3);">
+                                <i class="ri-google-play-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="projects__content">
+                            <h3 class="projects__subtitle">Pioneer clinic reservation</h3>
+                            <h2 class="projects__title">PioneerClinic App</h2>
+                        
+                    <p class="projects__description">
+    As the lead designer for the PioneerClinic app in Damascus, I crafted a clean and intuitive interface that simplifies booking and managing doctor appointments. The design focuses on user-friendliness, clear navigation, and a calming visual style to enhance patient trust and engagement. Custom icons, smooth workflows, and thoughtful layout choices ensure users enjoy a seamless healthcare experience. 💉👩‍⚕️
+</p>
+
+
+                        </div>
+
+                        <div class="projects__buttons">
+                          
+                            <a href="https://m.facebook.com/people/%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9-%D8%A7%D9%84%D8%B1%D9%88%D8%A7%D8%AF-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D9%8A%D8%A9/100057079344884/?locale=es_LA" target="_blank" class="projects__link">
+                                <i class="ri-facebook-line"></i>Visit 
+                            </a>
+                        
+                        </div>
+                       <p style="padding-top: 10px; font-size: 14px;">
+    <span style="color: #D88CEF;">#UI_Design</span>
+    <span style="color: hsla(0, 0%, 49%, 0.687);"> #UX_Design #MobileDesign #HealthcareApp</span>
+</p>
+<p>
+    <span style="color: red; margin-left: 10px;">#Figma</span>
+    <span style="color: hsla(0, 0%, 49%, 0.687);"> #AdobeXD #Prototyping #UserFlow</span>
+</p>
+
+                    </article>
+
+                    <article class="projects__card">
+                        <div class="projects__image" style="position: relative;">
+                            <img src="assets/img/weather.jpg" alt="image" class="projects__img">
+                        </div>
+
+                        <div class="projects__content">
+                            <h3 class="projects__subtitle">Weather app task (Saudi Arabia)</h3>
+                            <h2 class="projects__title">Weather App</h2>
+
+                         <p class="projects__description">
+    As the designer of WeatherApp, I focused on creating two sleek and intuitive interfaces that allow users to easily access detailed weather forecasts. The design emphasizes simplicity and usability, ensuring that users can quickly check weather updates for the next five days without any hassle. The interface is visually appealing, with clear icons and an organized layout to enhance user engagement and experience. 🌧☀
+</p>
+
+                        </div>
+
+                        <div class="projects__buttons">
+                           
+                            <a href="https://sa.pioneers.network/" target="_blank" class="projects__link">
+                                <i class="ri-globe-line"></i>Visit 
+                            </a>
+                        </div>
+                       <p style="padding-top: 10px; font-size: 14px;">
+    <span style="color: #D88CEF;">#UI_Design</span>
+    <span style="color: hsla(0, 0%, 49%, 0.687);"> #UX_Design #MobileAppDesign #WeatherApp</span>
+</p>
+
+                    
+                    </article>
+
+                    <article class="projects__card">
+                        <div class="projects__image" style="position: relative;">
+                            <img src="assets/img/platform.jpg" alt="image" class="projects__img">
+
+                        </div>
+
+                        <div class="projects__content">
+                            <div class="projects__item">
+                                <h3 class="projects__subtitle">project at (Damascus University)</h3>
+                                <h2 class="projects__title">Colsuntaint Platform App</h2>
+                               <p class="projects__description">
+    As the designer of Colsuntaint, an innovative consulting app, I crafted two intuitive interfaces: one for users and one for administrators. For users, the design focuses on an easy-to-navigate interface where they can effortlessly browse through expert profiles and access services. The administrator's interface, optimized for desktop, ensures smooth real-time communication management. The clean, user-centric design enhances the overall consulting experience, making it easy to connect, communicate, and get the assistance needed. 💼🧑‍💼
+</p>
+
+                            </div>
+                            
+                        <div class="projects__buttons">
+                          
+                            <a href="https://damascusuniversity.edu.sy/ite/" target="_blank" class="projects__link">
+                                <i class="ri-globe-line"></i>Visit 
+                            </a>
+                        </div>
+                       <p style="padding-top: 10px; font-size: 14px;">
+    <span style="color: #D88CEF;">#UI_Design</span>
+    <span style="color: hsla(0, 0%, 49%, 0.687);"> #UX_Design #MobileAppDesign #ConsultingApp</span>
+</p>
+<p>
+    <span style="color: red; margin-left: 10px;">#Figma</span>
+    <span style="color: hsla(0, 0%, 49%, 0.687);"> #AdobeXD #Prototyping #UserInterface</span>
+</p>
+
+                    </article>
+                    
+                </div>
+             </section>
+       <!--==================== CONTACT =================-->
+<section class="contact section" id="contact">
+    <div class="contact__container grid">
+        <div class="contact__data">
+            <h2 class="section__title-2">
+                <span>Contact Me.</span>
+            </h2>
+
+            <p class="contact__description-1">
+                Feel free to send me a message, and I’ll get back to you as soon as possible.
+            </p>
+
+            <p class="contact__description-1">
+                I need your <b>Name</b> and <b>Email Address</b>.
+            </p>
+
+            <div class="geometric-box"></div>
+        </div>
+
+        <div class="contact__mail">
+            <h2 class="contact__title">
+                Send Me A Message
+            </h2>
+
+            <form id="contact-form" class="contact__form" action="https://formspree.io/f/mvgpnwje" method="POST">
+                <input type="hidden" name="_subject" value="New Contact Form Submission">
+                <div class="contact__group">
+                    <div class="contact__box">
+                        <input type="text" name="user_name" class="contact__input" id="name" required placeholder="First Name">
+                        <label for="name" class="contact__label">First Name</label>
+                    </div>
+                    <div class="contact__box">
+                        <input type="email" name="email" class="contact__input" id="email" required placeholder="Email Address">
+                        <label for="email" class="contact__label">Email Address</label>
+                    </div>
+                </div>
+                <div class="contact__box">
+                    <input type="text" name="subject" class="contact__input" id="subject" required placeholder="Subject">
+                    <label for="subject" class="contact__label">Subject</label>
+                </div>
+                <div class="contact__box contact__area">
+                    <textarea name="message" id="message" class="contact__input" required placeholder="Message"></textarea>
+                    <label for="message" class="contact__label">Message</label>
+                </div>
+                <p class="contact__message" id="contact-message"></p>
+                <button type="submit" class="contact__button button">
+                    <i class="ri-send-plane-line"></i> Send Message
+                </button>
+            </form>
+        </div>
+
+        <!-- Modal -->
+        <div id="messageModal" class="modal" style="display:none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); z-index: 1000;">
+            <p id="modal-message" style="text-align: center;"></p>
+        </div>
+    </div>
+</section>
+
+<!--==================== FOOTER =====================-->
+<footer class="footer">
+    <div class="footer__container container grid">
+        <ul class="footer__links">
+            <li>
+                <a href="#about" class="footer__link">About</a>
+            </li>
+            <li>
+                <a href="#services" class="footer__link">Services</a>
+            </li>
+            <li>
+                <a href="#projects" class="footer__link">Projects</a>
+            </li>
+        </ul>
+
+        <span class="footer__copy">
+            &#169; All Rights Reserved By
+            <a href="">Raghad Designer</a>
+        </span>
+    </div>
+</footer>
+
+<!--==================== SCROLL UP =====================-->
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-s-line"></i>
+</a>
+<!--==================== SCROLLREVAL =====================-->
+<script src="assets/js/scrollreveal.min.js"></script>
+
+<!--==================== MAIN JS =====================-->
+<script src="assets/js/main.js"></script>
+
+<!--==================== Form Submit Script =====================-->
+<script>
+    const contactForm = document.getElementById('contact-form');
+    const messageModal = document.getElementById('messageModal');
+    const modalMessage = document.getElementById('modal-message');
+
+    // Show modal for 3 seconds
+    const showModal = (message, color) => {
+        modalMessage.textContent = message;
+        modalMessage.style.color = color;
+        messageModal.style.display = 'block';
+
+        setTimeout(() => {
+            messageModal.style.display = 'none';
+        }, 3000);
+    }
+
+    // Handle form submission
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Send the form data using Formspree
+        fetch(contactForm.action, {
+            method: 'POST',
+            body: new FormData(contactForm),
+            headers: { 'Accept': 'application/json' }
+        })
+        .then(response => {
+            if (response.ok) {
+                // Show success modal and clear the form
+                showModal('Message sent successfully ✅', 'green');
+                contactForm.reset(); // Clear form fields
+            } else {
+                // Show error modal
+                showModal('Failed to send message ❌', 'red');
+            }
+        })
+        .catch(error => {
+            // Show error modal in case of a network or other error
+            showModal('Failed to send message ❌', 'red');
+        });
+    });
+</script>
